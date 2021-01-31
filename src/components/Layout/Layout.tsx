@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
       </Head>
 
       <header className={styles.header}>
-        <Link href="/">
+        <Link href="/eShop">
           <svg
             width="175"
             height="24"

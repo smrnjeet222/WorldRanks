@@ -1,5 +1,5 @@
-import Head from "next/head";
 import { QueryClient, QueryClientProvider } from "react-query";
+import Layout from "../components/Layout/layout";
 import "../styles/globals.scss";
 
 const client = new QueryClient();
@@ -7,12 +7,10 @@ const client = new QueryClient();
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <QueryClientProvider client={client}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </QueryClientProvider>
     </>
   );

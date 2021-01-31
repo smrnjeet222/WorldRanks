@@ -1,9 +1,9 @@
 import Button from "@material-ui/core/Button";
 // Types
-import { CartItemType } from "../pages/index";
+import { CartItemType } from "../src/pages/eShop";
 
 // Styles
-import { Wrapper } from "../styledComponents/cartItem.styles";
+import { Wrapper } from "./styledComponents/cartItem.styles";
 
 type Props = {
   item: CartItemType;

@@ -1,15 +1,18 @@
 import { useState } from "react";
 import { useQuery } from "react-query";
 // Components
-import Item from "../components/item";
-import Cart from "../components/cart";
+import Item from "../../eShopComponents/item";
+import Cart from "../../eShopComponents/cart";
 import Drawer from "@material-ui/core/Drawer";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
 import { AddShoppingCart } from "@material-ui/icons";
 import Badge from "@material-ui/core/Badge";
 // Styles
-import { Wrapper, StyledButton } from "../styledComponents/home.styles";
+import {
+  Wrapper,
+  StyledButton,
+} from "../../eShopComponents/styledComponents/home.styles";
 
 export type CartItemType = {
   id: number;

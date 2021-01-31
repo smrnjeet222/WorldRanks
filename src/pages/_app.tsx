@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "react-query";
-import Layout from "../components/Layout/layout";
+import Layout from "../components/Layout/Layout";
 import "../styles/globals.scss";
 
 const client = new QueryClient();
